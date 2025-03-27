@@ -36,6 +36,9 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+	
+	
+	  
 
 	// DANH MUC HE THONG
 	// {
@@ -50,6 +53,43 @@
 	// 		},
 	// 	],
 	// },
+
+	///////////////////////////////////
+	// QUẢN LÝ SỔ VĂN BẰNG
+	{
+		path: '/quan-ly-so-van-bang',
+		name: 'Quản lý sổ văn bằng',
+		routes: [
+			{
+				path: '/quan-ly-so-van-bang/so-van-bang',
+				name: 'Sổ văn bằng',
+				component: './thuchanh4/QuanLySoVanBang/SoVanBang',
+			},
+			{
+				path: '/quan-ly-so-van-bang/quyet-dinh-tot-nghiep',
+				name: 'Quyết định tốt nghiệp',
+				component: './thuchanh4/QuanLySoVanBang/QuyetDinhTotNghiep',
+			},
+			{
+				path: '/quan-ly-so-van-bang/cau-hinh-bieu-mau',
+				name: 'Cấu hình biểu mẫu',
+				component: './thuchanh4/QuanLySoVanBang/CauHinhBieuMau',
+			},
+			{
+				path: '/quan-ly-so-van-bang/thong-tin-van-bang',
+				name: 'Thông tin văn bằng',
+				component: './thuchanh4/QuanLySoVanBang/ThongTinVanBang',
+			},
+		],
+	},
+
+	///////////////////////////////////
+	// TRA CỨU VĂN BẰNG
+	{
+		path: '/tra-cuu-van-bang',
+		name: 'Tra cứu văn bằng',
+		component: './thuchanh4/TraCuuVanBang',
+	},
 
 	{
 		path: '/notification',
