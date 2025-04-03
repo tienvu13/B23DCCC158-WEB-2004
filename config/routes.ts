@@ -1,4 +1,6 @@
-﻿export default [
+﻿import component from "@/locales/en-US/component";
+
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -82,6 +84,8 @@
 			},
 		],
 	},
+	
+
 
 	///////////////////////////////////
 	// TRA CỨU VĂN BẰNG
@@ -89,6 +93,12 @@
 		path: '/tra-cuu-van-bang',
 		name: 'Tra cứu văn bằng',
 		component: './thuchanh4/TraCuuVanBang',
+	},
+	{
+		path: '/quan-ly-nhan-vien',
+		name: 'Quản Lý Nhân Viên',
+		icon: 'UserOutlined',
+		component: './nhanvien/OrderManagement',
 	},
 
 	{
