@@ -1,6 +1,6 @@
-import { Employee } from "@/models/nhanvien/employee";
+import type { Employee } from '@/models/nhanvien/employee';
 
-const STORAGE_KEY = "employees";
+const STORAGE_KEY = 'employees';
 
 export const getEmployees = (): Employee[] => {
   const data = localStorage.getItem(STORAGE_KEY);

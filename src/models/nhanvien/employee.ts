@@ -7,7 +7,7 @@ export interface Employee {
     status: string;
   }
   
-  const STORAGE_KEY = "employees";
+  const STORAGE_KEY = 'employees';
   
   // Lấy danh sách nhân viên từ localStorage
   export const getEmployees = (): Employee[] => {
@@ -38,7 +38,7 @@ export interface Employee {
     const employees = getEmployees();
     const employee = employees.find(e => e.id === id);
   
-    if (employee?.status === "Đã ký hợp đồng") {
+    if (employee?.status === 'Đã ký hợp đồng') {
       return false; // Không thể xóa nhân viên đã ký hợp đồng
     }
   
