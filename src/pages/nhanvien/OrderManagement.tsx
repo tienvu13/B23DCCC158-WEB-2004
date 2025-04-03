@@ -117,6 +117,8 @@ const EmployeeManagement: React.FC = () => {
             <Select placeholder="Chọn trạng thái">
               <Option value="Đã ký hợp đồng">Đã ký hợp đồng</Option>
               <Option value="Thử việc">Thử việc</Option>
+              <Option value="Nghỉ Phép">Nghỉ Phép</Option>
+              <Option value="Đã thôi việc">Đã thôi việc</Option>
             </Select>
           </Form.Item>
         </Form>

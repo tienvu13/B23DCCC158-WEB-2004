@@ -37,12 +37,12 @@ export interface Employee {
   export const deleteEmployee = (id: string): boolean => {
     const employees = getEmployees();
     const employee = employees.find(e => e.id === id);
-  
-    if (employee?.status === 'Đã ký hợp đồng') {
-      return false; // Không thể xóa nhân viên đã ký hợp đồng
+
+    // Chỉ cho phép xóa nếu trạng thái là "Đã thôi việc" hoặc "Thực tập"
+    if (employee?.status !== 'Đã thôi việc' && employee?.status !== 'Thực tập') {
+        return false; // Không thể xóa nhân viên không thuộc trạng thái cho phép
     }
-  
+
     saveEmployees(employees.filter(e => e.id !== id));
     return true;
   };
-  
