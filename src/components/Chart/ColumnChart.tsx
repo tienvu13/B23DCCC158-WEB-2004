@@ -6,7 +6,7 @@ import { type DataChartType } from '.';
 import './style.less';
 import vi from './vi.json';
 
-const ColumnChart = (props: DataChartType) => {
+export const ColumnChart = (props: DataChartType) => {
 	const { title, xAxis, yAxis, yLabel, height, type, formatY, colors, otherOptions } = props;
 
 	const options: ApexOptions = {
@@ -89,4 +89,3 @@ const ColumnChart = (props: DataChartType) => {
 	);
 };
 
-export default ColumnChart;

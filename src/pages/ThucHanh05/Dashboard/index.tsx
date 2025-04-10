@@ -10,7 +10,8 @@ import {
   CloseOutlined,
   DownloadOutlined
 } from '@ant-design/icons';
-import { ClubMember, Club, ApplicationStatus, Stats } from '../types';
+import type { ClubMember, Club, Stats } from '../types';
+import { ApplicationStatus } from '../types';
 import { ColumnChart } from '@/components/Chart';
 import * as XLSX from 'xlsx';
 
