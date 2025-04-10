@@ -100,6 +100,38 @@ export default [
 		icon: 'UserOutlined',
 		component: './nhanvien/OrderManagement',
 	},
+	{
+        name: "Quản lý câu lạc bộ",
+        path: "ThucHanh05",
+        component: "./ThucHanh05",
+        icon: "TeamOutlined",
+        routes: [
+            {
+                name: "Tổng quan",
+                path: "./",
+                component: "./ThucHanh05/Dashboard",
+                icon: "DashboardOutlined",
+            },
+            {
+                name: "Quản lý CLB",
+                path: "clubs",
+                component: "./ThucHanh05/ClubManagement/ClubList",
+                icon: "TeamOutlined",
+            },
+            {
+                name: "Quản lý đơn đăng ký",
+                path: "applications",
+                component: "./ThucHanh05/ApplicationManagement/ApplicationList",
+                icon: "FormOutlined",
+            },
+            {
+                name: "Quản lý thành viên",
+                path: "members",
+                component: "./ThucHanh05/MemberManagement/ClubMembers",
+                icon: "UserOutlined",
+            }
+        ]
+    },
 
 	{
 		path: '/notification',
