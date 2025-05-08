@@ -1,5 +1,4 @@
-﻿import component from "@/locales/en-US/component";
-
+﻿
 export default [
 	{
 		path: '/user',
@@ -38,7 +37,32 @@ export default [
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
-	
+	{
+		name: 'Du Lịch',
+		routes: [
+		  {
+			name: 'Trang chủ',
+			path: 'home',
+			component: './HomePage',  // Đường dẫn đến trang Trang chủ
+		  },
+		  {
+			name: 'Trang Quản Trị',
+			path: 'admin',
+			component: './AdminPage',  // Đường dẫn đến trang Quản trị
+		  },
+		  {
+			name: 'Kế Hoạch Du Lịch',
+			path: 'planer',
+			component: './TravelPlanPage',  // Đường dẫn đến trang Lập kế hoạch du lịch
+		  },
+		  {
+			name: 'Ngân Sách',
+			path: 'budget',
+			component: './BudgetPage',  // Đường dẫn đến trang Quản lý ngân sách
+		  },
+		],
+		icon: 'MenuUnfoldOutlined',  // Icon cho nhóm Du Lịch
+	  },
 	
 	  
 

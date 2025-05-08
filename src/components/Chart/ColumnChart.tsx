@@ -27,7 +27,7 @@ export const ColumnChart = (props: DataChartType) => {
 						opacity: 0.4,
 						width: 1,
 					},
-				},
+				},   
 			},
 		},
 		title: {
